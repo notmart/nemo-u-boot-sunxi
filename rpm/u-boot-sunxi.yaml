@@ -1,0 +1,71 @@
+Name: u-boot-sunxi 
+Summary: The u-boot firmware for sunxi boards
+Version: 2013.01+git20131126.183136
+Release: 1
+Group: System/Boot
+License: GPL
+URL: http://linux-sunxi.org/Main_Page
+Sources:
+    - "%{name}-%{version}.tar.bz2"
+    - u-boot-sunxi.cmd
+    - u-boot-sunxi-spec-file-helper.sh
+    - README-PACKAGER.txt
+Patches:
+    - 0001-Import-no-fel.diff
+Description: |
+        Das U-Boot (or just "U-Boot" for short) is Open Source Firmware for Embedded PowerPC, ARM, MIPS and x86 processors.
+
+Configure: none
+Builder: none
+ExclusiveArch: "%{arm}"
+Requires:
+    - u-boot-sunxi-eoma68_a20
+    - u-boot-sunxi-doc
+    - u-boot-sunxi-tools
+Provides:
+    - u-boot
+
+Files:
+    - "%doc CREDITS"
+
+SubPackages:
+    - Name: doc
+      Summary: Documentation for the u-boot Firmware
+      Group: Documentation
+      AutoDepend: false
+      Description: |
+          Das U-Boot (or just "U-Boot" for short) is Open Source Firmware for Embedded PowerPC, ARM, MIPS and x86 processors.
+          This package contains documentation for u-boot firmware
+
+      Files:
+          - "%doc README doc/README.JFFS2 doc/README.JFFS2_NAND doc/README.commands"
+          - "%doc doc/README.autoboot doc/README.commands doc/README.console doc/README.dns"
+          - "%doc doc/README.hwconfig doc/README.nand doc/README.NetConsole doc/README.serial_multi"
+          - "%doc doc/README.SNTP doc/README.standalone doc/README.update doc/README.usb"
+          - "%doc doc/README.video doc/README.VLAN doc/README.silent doc/README.POST doc/README.Modem"
+          - "%doc tools/scripts/dot.kermrc tools/scripts/flash_param tools/scripts/send_cmd tools/scripts/send_image"
+          - "%doc doc/README.ARM-SoC doc/README.ARM-memory-map"
+
+    - Name: tools
+      Summary: Tools for the u-boot Firmware
+      Group: System/Boot
+      AutoDepend: false
+      Description: |
+          Das U-Boot (or just "U-Boot" for short) is Open Source Firmware for Embedded PowerPC, ARM, MIPS and x86 processors.
+          This package contains:
+          mkimage- a tool that creates kernel bootable images for u-boot.
+
+      Files:
+          - "%{_bindir}/mkimage"
+          - "%{_mandir}/man1/mkimage.1.gz"
+
+    - Name:  eoma68_a20
+      Summary: U-boot files of board eoma68_a20
+      Group: System/Boot
+      AutoDepend: false
+      Description: |
+          This package contain board specifiy u-boot files
+
+      Files:
+          - /boot/*
+

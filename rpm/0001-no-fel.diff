@@ -1,0 +1,13 @@
+diff --git a/boards.cfg b/boards.cfg
+index 6421dbe..5b48bfe 100644
+--- a/boards.cfg
++++ b/boards.cfg
+@@ -371,7 +371,7 @@ Active  arm         armv7          sunxi       -               sunxi
+ Active  arm         armv7          sunxi       -               sunxi               DNS_M82                              sun4i:DNS_M82,SPL                                                                                                                 -
+ Active  arm         armv7          sunxi       -               sunxi               EOMA68_A10                           sun4i:EOMA68_A10,SPL,MMC_SUNXI_SLOT=3,SUNXI_EMAC                                                                                  -
+ Active  arm         armv7          sunxi       -               sunxi               EOMA68_A10_FEL                       sun4i:EOMA68_A10,SPL_FEL,MMC_SUNXI_SLOT=3,SUNXI_EMAC                                                                              -
+-Active  arm         armv7          sunxi       -               sunxi               EOMA68_A20                           sun7i:EOMA68_A20,SPL,MMC_SUNXI_SLOT=3,SUNXI_EMAC                                                                                  -
++Active  arm         armv7          sunxi       -               sunxi               EOMA68_A20                           sun7i:EOMA68_A20,MMC_SUNXI_SLOT=3,SUNXI_EMAC                                                                                  -
+ Active  arm         armv7          sunxi       -               sunxi               EOMA68_A20_FEL                       sun7i:EOMA68_A20,SPL_FEL,MMC_SUNXI_SLOT=3,SUNXI_EMAC                                                                              -
+ Active  arm         armv7          sunxi       -               sunxi               EU3000                               sun7i:EU3000,SPL                                                                                                                  -
+ Active  arm         armv7          sunxi       -               sunxi               Gooseberry_A721                      sun4i:GOOSEBERRY_A721,SPL                                                                                                         -

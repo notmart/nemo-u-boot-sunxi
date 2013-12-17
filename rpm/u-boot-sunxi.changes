@@ -1,0 +1,27 @@
+* Tue Nov 26 2013 Marco Martin <mart@kde.org> - 2013.01+git20131126.183136
+- Update automatically tarball from repository.
+- Repository URL: https://github.com/linux-sunxi/u-boot-sunxi.git
+- Branch:  sunxi
+- Commit ID: d4312a6b6ceb6f161a2f212d194dc7e28a9805aa
+
+* Fri Apr 24 2013 Maurice de la Ferté <kadava@gmx.de> - 2013.01+git20130413.083929
+- Add eoma68-a10 target to u-boot-sunxi
+
+* Sat Apr 13 2013 Maurice de la Ferté <kadava@gmx.de> - 2013.01+git20130413.083929
+- Update automatically tarball from repository.
+- Repository URL: git://github.com/linux-sunxi/u-boot-sunxi.git
+- Branch:  sunxi
+- Commit ID: 1a8ac55429f7f8cc9f100c1cf2dc0195cf81e76f
+
+* Mon Apr 01 2013 Maurice de la Ferté <kadava@gmx.de> - 2013.01+git20130401.135413
+- Update automatically tarball from repository.
+- Repository URL: git://github.com/linux-sunxi/u-boot-sunxi.git
+- Branch:  sunxi
+- Commit ID: b85d94350964c573db4fe58c9b66f874d5a63ea3
+
+* Wed Mar 13 2013 Maurice de la Ferté <kadava@gmx.de> - 2013.01+git20130313.081548
+- Update automatically tarball from repository.
+- Add helper scripts for sub packages
+- Repository URL: git://github.com/linux-sunxi/u-boot-sunxi.git
+- Branch:  sunxi
+- Commit ID: 7aa9f04f571247a6bb999c168b49e09f05b86465
